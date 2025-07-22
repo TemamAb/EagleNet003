@@ -1,66 +1,18 @@
-# Python Artifacts
 __pycache__/
-pyo/
-pyd/
-so/
-egg/
-egg-info/
-dist/
-build/
-spec/
-log/
-
-# Environment & Secrets
 .env
-example.env
-vercel.pem
-private.key
-ssl.crt
-
-# Vercel Deployment
 .vercel/
-.vercel_build_output/
-
-# Streamlit & Dash
 .streamlit/
-.dash/
-
-# Node.js Artifacts
 node_modules/
-package-lock.json
-pnpm-debug.log
-tsbuildinfo
-
-# Windows & Shell Scripts
 install_and_run.bat
 install_dashboard.bat
 deploy_dashboard.sh
 run_dashboard.bat
-deploy_dashboard.sh
-
-# Logs & Temp Files
 bot_logs.txt
-tempfile.tmp
-backup.bak
-
-# Project Directories
 pages/
 strategies/
 angular/
 banbot-main/
-
-# Testing & Coverage
-.pytest_cache/
-coverage.xml
-htmlcov/
-tox/
-nosetests.xml
-test-results/
-
-# IDE & OS Artifacts
 .vscode/
 .idea/
-project.sublime-project
-workspace.sublime-workspace
 .DS_Store
 Thumbs.db
