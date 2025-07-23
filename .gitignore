@@ -1,85 +1,66 @@
-# =====================
-#  Python Artifacts
-# =====================
+# Python Artifacts
 __pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-*.so
-*.egg
-*.egg-info/
+pyo/
+pyd/
+so/
+egg/
+egg-info/
 dist/
 build/
-*.spec
-*.log
-#  Environment & Secrets
+spec/
+log/
 
+# Environment & Secrets
 .env
-*.env.*
-!example.env  # If you want to commit a template
-*.pem
-*.key
-*.crt
+example.env
+vercel.pem
+private.key
+ssl.crt
 
-
-#  Vercel Deployment
-# 
+# Vercel Deployment
 .vercel/
 .vercel_build_output/
 
-#  Streamlit & Dash
-
+# Streamlit & Dash
 .streamlit/
 .dash/
 
-#  Node.js Artifacts
-
+# Node.js Artifacts
 node_modules/
 package-lock.json
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log
-*.tsbuildinfo
+pnpm-debug.log
+tsbuildinfo
 
-Windows Scripts
-
-*.bat
-*.exe
-
-# Shell Scripts
-*.sh
+# Windows & Shell Scripts
 install_and_run.bat
 install_dashboard.bat
 deploy_dashboard.sh
 run_dashboard.bat
+deploy_dashboard.sh
 
-#  Logs & Temp
-*.log
+# Logs & Temp Files
 bot_logs.txt
-*.tmp
-*.bak
+tempfile.tmp
+backup.bak
 
-#  Project Directories
+# Project Directories
 pages/
 strategies/
 angular/
 banbot-main/
 
-#  Testing & Coverage
+# Testing & Coverage
 .pytest_cache/
 coverage.xml
 htmlcov/
-.nox/
-.tox/
+tox/
 nosetests.xml
 test-results/
 
-#  IDE & Editor Files
+# IDE & OS Artifacts
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
-#  OS Junk
+project.sublime-project
+workspace.sublime-workspace
 .DS_Store
 Thumbs.db
