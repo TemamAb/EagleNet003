@@ -11,3 +11,4 @@ psycopg2-binary~=2.9.6
 flask>=3.1.1
 gunicorn
 857f1ab (Add untracked operational files and configuration assets)
+psycopg2-binary~=2.9.6
