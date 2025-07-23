@@ -12,10 +12,8 @@ dist/
 build/
 *.spec
 *.log
-
-# =====================
 #  Environment & Secrets
-# =====================
+
 .env
 *.env.*
 !example.env  # If you want to commit a template
@@ -23,21 +21,19 @@ build/
 *.key
 *.crt
 
-# =====================
+
 #  Vercel Deployment
-# =====================
+# 
 .vercel/
 .vercel_build_output/
 
-# =====================
 #  Streamlit & Dash
-# =====================
+
 .streamlit/
 .dash/
 
-# =====================
 #  Node.js Artifacts
-# =====================
+
 node_modules/
 package-lock.json
 npm-debug.log*
@@ -46,40 +42,31 @@ yarn-error.log*
 .pnpm-debug.log
 *.tsbuildinfo
 
-# =====================
-#  Windows Scripts
-# =====================
+Windows Scripts
+
 *.bat
 *.exe
 
-# =====================
 # Shell Scripts
-# =====================
 *.sh
 install_and_run.bat
 install_dashboard.bat
 deploy_dashboard.sh
 run_dashboard.bat
 
-# =====================
 #  Logs & Temp
-# =====================
 *.log
 bot_logs.txt
 *.tmp
 *.bak
 
-# =====================
 #  Project Directories
-# =====================
 pages/
 strategies/
 angular/
 banbot-main/
 
-# =====================
 #  Testing & Coverage
-# =====================
 .pytest_cache/
 coverage.xml
 htmlcov/
@@ -88,16 +75,11 @@ htmlcov/
 nosetests.xml
 test-results/
 
-# =====================
 #  IDE & Editor Files
-# =====================
 .vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
-
-# =====================
 #  OS Junk
-# =====================
 .DS_Store
 Thumbs.db
