@@ -1,7 +1,0 @@
-dash==2.7.1
-dash-bootstrap-components==1.3.1
-pandas==1.5.3
-numpy==1.24.3
-plotly==5.11.0
-waitress==2.1.2
-protobuf==3.20.3  # Explicitly matches streamlit's requirement

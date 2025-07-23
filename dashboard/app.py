@@ -4,17 +4,23 @@ from flask import Flask
 
 app = Flask(__name__)
 
-# Database connection
-conn = psycopg2.connect(
-    dbname=os.getenv("DB_NAME"),
-    user=os.getenv("DB_USER"),
-    password=os.getenv("DB_PASSWORD"),
-    host=os.getenv("DB_HOST"),
-    port="5432"
-)
-
 @app.route("/")
 def index():
-    return "EagleNet Dashboard Online"
+    try:
+        conn = psycopg2.connect(
+            dbname=os.getenv("DB_NAME"),
+            user=os.getenv("DB_USER"),
+            password=os.getenv("DB_PASSWORD"),
+            host=os.getenv("DB_HOST"),
+            port="5432"
+        )
+        conn.close()
+        return "EagleNet Dashboard Online"
+    except Exception as e:
+        return f"Database connection failed: {e}"
 
-# Add additional routes and telemetry logic here
+@app.route("/ping")
+def ping():
+    return "pong"
+
+handler = app

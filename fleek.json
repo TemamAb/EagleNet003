@@ -1,0 +1,7 @@
+{
+  "name": "EagleNet003",
+  "framework": "custom",
+  "preset": "docker",
+  "buildCommand": "export $(cat .env | xargs) && python3 flashbot_launcher.py",
+  "publishDirectory": "/"
+}

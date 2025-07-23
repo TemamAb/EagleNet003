@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 __pycache__/
 .env
 .vercel/
@@ -16,3 +17,9 @@ banbot-main/
 .idea/
 .DS_Store
 Thumbs.db
+=======
+*.bak
+.env
+
+.vercel
+>>>>>>> 857f1ab (Add untracked operational files and configuration assets)
