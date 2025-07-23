@@ -2,6 +2,10 @@
   "version": 2,
   "builds": [
     {
+      "src": "*.py",
+      "use": "@vercel/python"
+    },
+    {
       "src": "dashboard/app.py",
       "use": "@vercel/python"
     }
@@ -11,6 +15,5 @@
       "src": "/(.*)",
       "dest": "dashboard/app.py"
     }
-  ],
-  "installCommand": "pip install --upgrade -r clean_requirements.txt"
+  ]
 }
