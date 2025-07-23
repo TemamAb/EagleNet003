@@ -1,5 +1,5 @@
 import os
-import psycopg2
+import sqlite3
 from flask import Flask
 
 app = Flask(__name__)
@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     try:
-        conn = psycopg2.connect(
+        conn = sqlite3.connect(
             dbname=os.getenv("DB_NAME"),
             user=os.getenv("DB_USER"),
             password=os.getenv("DB_PASSWORD"),

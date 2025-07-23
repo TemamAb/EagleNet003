@@ -1,10 +1,7 @@
+cat > vercel.json <<'EOF'
 {
   "version": 2,
   "builds": [
-    {
-      "src": "*.py",
-      "use": "@vercel/python"
-    },
     {
       "src": "dashboard/app.py",
       "use": "@vercel/python"
@@ -17,3 +14,4 @@
     }
   ]
 }
+EOF

@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "eaglenet",
   "version": "1.0.0",
   "main": "index.js",
@@ -11,10 +10,7 @@
     "@grafana/faro-web-sdk": "^1.2.0",
     "axios": "^1.6.2",
     "dotenv": "^16.3.1",
-    "web3": "^4.2.2"
-=======
-  "dependencies": {
+    "web3": "^4.2.2",
     "@vercel/speed-insights": "^1.2.0"
->>>>>>> 857f1ab (Add untracked operational files and configuration assets)
   }
 }
